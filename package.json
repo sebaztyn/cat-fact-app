@@ -4,6 +4,9 @@
   "description": "Cat lovers enjoy learning new facts about their favourite pets. A single feed for this information would be useful.",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode production --progress",
+    "dev": "webpack --mode development --progress",
+    "start": "nodemon -w webpack.config.js -x webpack-dev-server -- --inline --open --compress --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +19,34 @@
   "bugs": {
     "url": "https://github.com/sebaztyn/cat-fact-app/issues"
   },
-  "homepage": "https://github.com/sebaztyn/cat-fact-app#readme"
+  "homepage": "https://github.com/sebaztyn/cat-fact-app#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "@material-ui/core": "^4.4.2",
+    "@material-ui/icons": "^4.4.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^4.0.0-beta.8",
+    "nodemon": "^1.19.2",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.1"
+  }
 }
