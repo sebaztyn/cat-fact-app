@@ -1,0 +1,20 @@
+{
+  "name": "cat-fact-app",
+  "version": "1.0.0",
+  "description": "Cat lovers enjoy learning new facts about their favourite pets. A single feed for this information would be useful.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebaztyn/cat-fact-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebaztyn/cat-fact-app/issues"
+  },
+  "homepage": "https://github.com/sebaztyn/cat-fact-app#readme"
+}
